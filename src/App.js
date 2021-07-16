@@ -32,10 +32,10 @@ function App() {
       <div className="main-content">
           <div className="content">
             <Switch>
-              <Route path="/portfolio" exact>
+              <Route path="/" exact>
                 <HomePage />
               </Route>
-              <Route path="/" exact>
+              <Route path="/portfolio" exact>
                 <HomePage />
               </Route>
               <Route path="/about" exact>
