@@ -1,8 +1,7 @@
 import './App.scss';
 import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage';
-import {HashRouter, Route} from 'react-router-dom'
-// import {Switch, Route} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 import AboutPage from './Pages/AboutPage';
 import ContactPage from './Pages/ContactPage';
 import { useState } from 'react';
@@ -32,7 +31,7 @@ function App() {
       </div>
       <div className="main-content">
           <div className="content">
-            <HashRouter>
+            <Switch>
               <Route path="/portfolio" exact>
                 <HomePage />
               </Route>
@@ -45,21 +44,7 @@ function App() {
               <Route path="/contact" exact>
                 <ContactPage />
               </Route>
-            </HashRouter>
-            {/* <Switch>
-              <Route path="/portfolio" exact>
-                <HomePage />
-              </Route>
-              <Route path="/" exact>
-                <HomePage />
-              </Route>
-              <Route path="/about" exact>
-                <AboutPage />
-              </Route>
-              <Route path="/contact" exact>
-                <ContactPage />
-              </Route>
-            </Switch> */}
+            </Switch>
           </div>
       </div>
     </div>
