@@ -2,6 +2,7 @@ import React from 'react';
 import about from '../img/about1.JPG';
 
 function ImageSection() {
+    
     return (
         <div className="ImageSection">
             <div className="img">
@@ -32,7 +33,12 @@ function ImageSection() {
                         
                     </div>
                 </div>
-                <a href="/files/Resume.docx" download className="res">
+                
+                {/* <a href="/files/about2.png" download="pro.png">
+                    
+                    <button className="btn">Download Cv</button>
+                </a> */}
+                <a href="/files/about2.png" download className="res">
                     <button className="btn">Download Cv</button>
                 </a>
             </div>
