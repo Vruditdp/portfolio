@@ -11,25 +11,34 @@ function App() {
   const navClick = () =>{
     setNavToggle(!navToggle)
   }
-  // const box=document.querySelector(".sidebar")
-  // document.addEventListener("click", function(event){
-  //   if(event.target.closest(".sidebar")) return
-  //   // box.classList.add("sidebar")
-  // })
+  const check = () =>{
+    if(navToggle==true){
+    setNavToggle(!navToggle)
+    }
+  }
+  
+  document.addEventListener("click",function(event){
+    if (event.target.closest(".nav-items")){
+      if(navToggle==true){
+        setNavToggle(!navToggle)
+        }
+    }
+  })
+
   return (
-    <div className="App">
-      <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
+    <div className="App" id="mapp">
+      <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`} id="sbar">
         <NavBar />
       </div>
-      <div className="nav-btn" onClick={navClick}>
+      <div className="nav-btn" onClick={navClick} id="anav">
         {/* <div className="lines-1"></div>
         <div className="lines-2"></div>
         <div className="lines-3"></div> */}
-        <div class={`menu-btn ${navToggle ? 'open': ''}`}>
+        <div class={`menu-btn ${navToggle ? 'open': ''}`} id="bnav">
           <div class="menu-btn__burger"></div>
         </div>
       </div>
-      <div className="main-content">
+      <div className="main-content" onClick={check}>
           <div className="content">
             <Switch>
               <Route path="/" exact>
