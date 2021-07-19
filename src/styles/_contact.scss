@@ -1,7 +1,18 @@
 .ContactItem{
+    
     @media screen and (max-width: 576px) and (min-width:411px){
         width: 110%;
         margin-left: -0.9rem;
+    }
+    @media screen and (max-width: 411px) and (min-width:393px){
+        width: 115%;
+        margin-left: -1.2rem;
+        
+    }
+    @media screen and (max-width: 393px) and (min-width:360px){
+        width: 118%;
+        margin-left: -1.7rem;
+        
     }
     width: 100%;
     &:not(:last-child){
@@ -21,7 +32,9 @@
             border: 1px solid #2e344e;
             margin-left: 2rem;
             width: 26%;
-            // background-color: white;
+            @media screen and (max-width: 393px) and (min-width:360px){
+                margin-left: 1.3rem;                
+            }
         }
         .right-items{
             h6{
@@ -31,9 +44,16 @@
             p{
                 font-size: 1rem;
             }
-            // @media screen and (max-width: 576px) and (min-width:411px){
-
+            // @media only screen and (min-width: 393px){
+            //     margin-left: 17px;
+            //     // font-size: 1rem;
             // }
+            @media screen and (max-width: 411px) and (min-width:393px){
+                margin-left: 17px;                
+            }
+            @media screen and (max-width: 393px) and (min-width:360px){
+                margin-left: 0.8rem;                
+            }
         }
     }
 }
