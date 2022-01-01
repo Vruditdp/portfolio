@@ -29,7 +29,7 @@ function ImageSection() {
                         <p>: 22</p>
                         <p>: Indian</p>
                         <p>: English, Hindi, Gujarati</p>
-                        <p>: C-101 Kalarav, New Shahibaug, Ahmedabad, GJ, India</p>
+                        <p>: C-101 Kalarav Residency, New Shahibaug, Ahmedabad, GJ, India</p>
                         
                     </div>
                 </div>
