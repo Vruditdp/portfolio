@@ -26,7 +26,7 @@ function ImageSection() {
                     </div>
                     <div className="right-section">
                         <p>: Vrudit Patel</p>
-                        <p>: 22</p>
+                        <p>: 21</p>
                         <p>: Indian</p>
                         <p>: English, Hindi, Gujarati</p>
                         <p>: C-101 Kalarav Residency, New Shahibaug, Ahmedabad, GJ, India</p>
