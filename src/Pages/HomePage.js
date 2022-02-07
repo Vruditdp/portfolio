@@ -15,7 +15,7 @@ function HomePage() {
                 </h1>
                 <p className="h-sub-text">
                     Currently I am pursuing sem 8 in computer engineering at Gujarat Technological University.
-                    Till now, I have got CPI: 8.60 and CPGA: 8.74, I possess good command on several subjects such as Java, SQL, Computer Network, Theory of Computation etc.
+                    Till now, I have got CPI: 8.60 and CPGA: 9.11, I possess good command on several subjects such as Java, SQL, Computer Network, Theory of Computation etc.
                 </p>
                 <div className="icons">
                     {/* <Link className="icon-holder">
